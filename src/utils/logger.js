@@ -22,7 +22,7 @@ export const logger = {
 				padding: 1,
 				margin: 1,
 				borderStyle: "round",
-				borderColor: "cyan",
+				borderColor: "red",
 			})
 		);
 	},
