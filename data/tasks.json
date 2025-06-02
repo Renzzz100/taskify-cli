@@ -1,14 +1,7 @@
 [
   {
-    "id": "1747464814501",
+    "id": "621822",
     "title": "Learn OOP",
-    "completed": false,
-    "createdAt": "2025-05-17T06:53:34.501Z"
-  },
-  {
-    "id": "1747650646435",
-    "title": "Belajar Buat Ujian",
-    "completed": false,
-    "createdAt": "2025-05-19T10:30:46.435Z"
+    "completed": true
   }
 ]

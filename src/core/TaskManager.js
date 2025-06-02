@@ -4,12 +4,12 @@ import { FileStorage } from "../storage/FileStorage.js";
 export class TaskManager {
 	constructor(storagePath = "data/tasks.json") {
 		this.storage = new FileStorage(storagePath);
-		this.tasks = this.storage.load() || [];
+		const rawTasks = this.storage.load() || [];
+		this.tasks = rawTasks.map((t) => new Task(t.id, t.title, t.completed));
 	}
 
 	addTask(title) {
-		const id = Date.now().toString();
-		const task = new Task(id, title);
+		const task = new Task(undefined, title);
 		this.tasks.push(task);
 		this.storage.save(this.tasks);
 		return task;
